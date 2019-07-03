@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = Number(prompt('Nhập chiều dài cạnh a'));
+    let b= Number(prompt('Nhập chiều dài cạnh b'));
+    let c =Number(prompt('Nhập chiều dài cạnh c'));
+    if (((a>0)||(b>0)||(c>0))||((a+b)>c) ||((a+c)>b) ||((b+c)>a)) {
+        alert('Các tham số bạn vừa nhập là chiều dài các cạnh của một tam giác')
+    }
+    else  {
+        alert("Không phải là cạnh của một tam giác");
+    }
+</script>
+</body>
+</html>

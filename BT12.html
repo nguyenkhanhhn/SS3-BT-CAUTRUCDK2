@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let money =Number(prompt('Nhập số tiền vay'));
+    let mont =Number (prompt('Nhập số tháng vay'));
+    let laisuat =Number (prompt('Nhập lãi suất'));
+   let i
+   for (i=0 ;i<mont;i++)
+    Sotientra =money*(Math.pow(1+laisuat/100,i+1));
+   alert('Số tiền cần trả là' +Sotientra);
+
+</script>
+</body>
+</html>

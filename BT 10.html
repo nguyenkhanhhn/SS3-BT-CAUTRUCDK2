@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a =Number(prompt('Nhập số điện tiêu thụ của gia đình bạn'));
+    if (a>401) {
+        giadien= 2927*a;
+    }
+    else {
+        if (a>=301) {
+            giadien=2834*a;
+        }
+        else {
+            if (a>=201) {
+                giadien=2536*a;
+            }
+            else  {
+                if (a>=100) {
+                    giadien=2014*a;
+                }
+                else {
+                    giadien=1734*a;
+                }
+            }
+        }
+    }
+    alert('Sô tiền bạn cần trả là :' +giadien);
+</script>
+</body>
+</html>

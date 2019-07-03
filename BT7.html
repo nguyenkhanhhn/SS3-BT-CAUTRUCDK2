@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+let a = Number(prompt('Nhập tham số a'));
+let b = Number(prompt('Nhập tham số b'));
+let c= Number(prompt('Nhập tham số c'));
+let x;
+if (a==0){
+    x= (-c)/b;
+    alert('Phương trình có nghiệm x =' +x);
+}
+else {
+    dental =(b*b)-4*a*c;
+    if (dental<0) {
+        alert('Phương trình vô nghiệm');
+    }
+    else {
+        if (dental==0) {
+            x =(-b)/2*a;
+            alert( 'phương trình có nghiệm x1 =x2 =' +x);
+        }
+        else  {
+            x1= (-b+Math.sqrt(dental))/(2*a);
+            x2 =(-b-Math.sqrt(dental))/(2*a);
+            alert('Phương trình có nghiệm x1 là :'+x1 + '  Nghiệm x2 là:'+ x2);
+        }
+    }
+}
+</script>
+</body>
+</html>
